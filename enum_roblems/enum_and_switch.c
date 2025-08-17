@@ -15,9 +15,9 @@ int main() {
     else if (choice == GREEN) color = GREEN;
     
     switch (color) {
-        case(RED) : printf("RED → Stop\n"); break;
-        case(YELLOW) : printf("YELLOW → Ready\n"); break;
-        case(GREEN) : printf("GREEN → Go\n"); break;
+        case RED : printf("RED → Stop\n"); break;
+        case YELLOW : printf("YELLOW → Ready\n"); break;
+        case GREEN : printf("GREEN → Go\n"); break;
     }
 
     return 0;
