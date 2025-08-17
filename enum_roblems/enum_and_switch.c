@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-typedef enum { RED, YELLOW, GREEN} LIGHT;
+typedef enum {RED, YELLOW, GREEN} LIGHT;
 
 int main() {
 
