@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-typedef enum {READ = 1, WRITE, RWRITE, EXECUTE, REXECUTE,  WEXECUTE, FULL} PERMITION;
+typedef enum {READ = 1, WRITE, EXECUTE=4} PERMITION;
 
 int main() {
-        
+
         int choice = 0;
 
         printf("Please choose permition: \n");
@@ -13,12 +13,12 @@ int main() {
         switch (choice) {
             case READ : printf("You gave read permition.\n"); break;
             case WRITE : printf("Your gave write permition.\n"); break;
-            case RWRITE : printf("You gave Read + Write permition.\n"); break;
+            case READ + WRITE : printf("You gave Read + Write permition.\n"); break;
             case EXECUTE : printf("You gave Execute permition.\n"); break;
-            case REXECUTE : printf("You gave Read + Execute permition.\n"); break;
-            case WEXECUTE : printf("You gave Write + Execute permition.\n"); break;
-            case FULL : printf("You gave Full permitions.\n");
-                
+            case READ + EXECUTE : printf("You gave Read + Execute permition.\n"); break;
+            case WRITE + EXECUTE : printf("You gave Write + Execute permition.\n"); break;
+            case READ + WRITE + EXECUTE : printf("You gave Full permitions.\n");
+
             default : return 1;
         }
 
